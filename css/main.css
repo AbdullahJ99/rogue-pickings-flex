@@ -43,6 +43,7 @@ h4 {
 }
 
 p {
+	font-size: 1rem;
 	line-height: 36px;
 }
 
@@ -56,7 +57,7 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 38px 0;
+	padding: 38px 0 20px 0;
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
@@ -139,7 +140,7 @@ header nav ul li a {
 
 .menu-list li {
 	color: #45610E;
-	font-size: 1em;
+	font-size: 1rem;
 	line-height: 36px;
 }
 
@@ -156,5 +157,56 @@ footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #45610E;
-	font-size: .875em;
+	font-size: .875rem;
+}
+
+@media all and (min-width: 768px) {
+    .bottom-section .content-wrapper {
+		justify-content: space-evenly;
+	}
+	
+	.section-one,
+	.section-two,
+	.section-three {
+		box-sizing: border-box;
+		width: 26%;
+	}
+	
+	.section-two {
+		border-left: 5px solid #EEE;
+		border-right: 5px solid #EEE;
+		border-top: none;
+		border-bottom: none;
+		padding: 0 30px;
+		width: 40%;
+	}
+}
+ 
+@media all and (min-width: 1200px) {
+    body {
+		font-size: 1em;		
+	}
+
+	header .content-wrapper {
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+
+	header h1 {
+		width: 30%;
+		padding: 0;
+		border-bottom: none;
+		text-align: left;
+	}
+
+	header nav{
+		width: 21%;
+	}
+
+	header nav ul{
+		display: flex;
+		justify-content: space-between;
+	}
+
 }
